@@ -1,0 +1,15 @@
+from .RegexTokenizer import Tokenizer
+
+tok = Tokenizer()
+tok.load("Tokenizer/models/learned_tokenizer.json")
+# print(f"Vocabulary: {tok.vocab}")
+# print(f"Merges: {tok.merges}")
+# print(f"Special tokens: {tok.special_tokens}")
+# print("----------------------------------------")
+print("Encoding")
+encoded_ids = tok.encode("Write me a poem.")
+print(encoded_ids)
+print("----------------------------------------")
+print("Decoding")
+decoded_text = tok.decode(encoded_ids)
+print(decoded_text)

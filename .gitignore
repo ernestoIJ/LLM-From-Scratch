@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+.venv*/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Training artifacts
+checkpoints/
+data/
+*.pt
+*.bin
+*.onnx
+*.log
+
+# Caches
+.cache/
+huggingface/
